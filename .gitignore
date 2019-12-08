@@ -6,7 +6,11 @@
 .idea
 *.iml
 /.gitignore
-/.idea
-
+target/
 out
+
+
+
+
+
 gen
