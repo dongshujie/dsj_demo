@@ -61,4 +61,29 @@ public class HomeWork {
             }
         }
     }
+
+    @Test
+    public void test2(){
+        System.out.println(isPalindrome(1));
+        System.out.println(isPalindrome(101));
+        System.out.println(isPalindrome(123));
+        System.out.println(isPalindrome(1221));
+        System.out.println(isPalindrome(-1221));
+    }
+
+    //判断是否是回文数
+    boolean isPalindrome(int x){
+        String str=x+"";
+        if(str.length()==1){
+            return true;
+        }
+        String str2="";
+        for(int i=str.length()-1;i>=0;i--){
+            str2+=str.charAt(i);
+        }
+        if(str.equals(str2)){
+            return true;
+        }
+        return false;
+    }
 }
